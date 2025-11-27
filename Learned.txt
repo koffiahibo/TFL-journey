@@ -1,0 +1,4 @@
+Everything learned from this project/ Questions I can answer from doig this project :
+############################################################################################################################
+
+- What are APIs ?, how they work ?, what are 3 different types of APIs?
