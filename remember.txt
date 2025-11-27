@@ -1,1 +1,2 @@
-TFL: terms and condition for using their services
+-TFL: terms and condition for using their services
+-When making an API request, please append the app_key as a query parameter to your requests. Please ignore any references to passing the app_id as this is no longer required.
