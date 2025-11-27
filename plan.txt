@@ -1,0 +1,7 @@
+Project Plan
+
+tfl API familiarity --> 
+classes and methods building --> 
+CLI implementation --> 
+GUI implementation -->
+
