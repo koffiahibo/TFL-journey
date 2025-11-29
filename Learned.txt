@@ -4,10 +4,13 @@ General
 ----------------------------------------------------------------------------------------------------------------------------
 
 - What are APIs ?, how they work ?, what are 3 different types of APIs?
+- How does tfl APi work ? How to access the documentation using tfl swagger ui.
 ############################################################################################################################
 
 
 ############################################################################################################################
 Specialised 
 ----------------------------------------------------------------------------------------------------------------------------
--stop and infinite loop in vscode using ctrl + C
+-stop and infinite loop in vscode using ctrl + C (Vscode)
+-using the https://api.tfl.gov.uk/....... template for every GET command (Tfl API)
+-
