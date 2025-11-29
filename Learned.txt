@@ -1,13 +1,17 @@
-Everything learned from this project/ Questions I can answer from doig this project :
+Everything learned from this project/ Questions I can answer from doing this project :
 ############################################################################################################################
 General
 ----------------------------------------------------------------------------------------------------------------------------
 
 - What are APIs ?, how they work ?, what are 3 different types of APIs?
+- How does tfl APi work ? How to access the documentation using tfl swagger ui.
+- what is json, how to work with json files ? how to use json files in python
 ############################################################################################################################
 
 
 ############################################################################################################################
 Specialised 
 ----------------------------------------------------------------------------------------------------------------------------
--stop and infinite loop in vscode using ctrl + C
+-stop and infinite loop in vscode using ctrl + C (Vscode)
+-using the https://api.tfl.gov.uk/....... template for every GET command (Tfl API)
+-python libraries : json, requests
