@@ -15,3 +15,4 @@ Specialised
 -stop and infinite loop in vscode using ctrl + C (Vscode)
 -using the https://api.tfl.gov.uk/....... template for every GET command (Tfl API)
 -python libraries : json, requests
+-function class <--- type(some_function) != type(some_function()) ---> type of the value returned
