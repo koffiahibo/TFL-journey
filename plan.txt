@@ -1,6 +1,10 @@
 Project Plan
 
-tfl API familiarity --> 
+tfl API familiarity -->
+sending requests, use of Json files to receive data
+swager ui and get commands
+
+
 classes and methods building --> 
 CLI implementation --> 
 GUI implementation -->
