@@ -23,8 +23,6 @@ def pprint(list) :
         print(item)
 
 
-print(len(valid_Lmodes()))
-print(len(valid_Jmodes()))
 
 
 

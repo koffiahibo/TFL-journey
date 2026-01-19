@@ -1,6 +1,6 @@
 from ValidData import *
 
-cmd =[]
+cmd = {}
 
 """
 cmd = {"help": all_commands,
@@ -13,7 +13,7 @@ def loop():
     while True:
         command = input("Tfl Journey >>")
         if command in cmd:
-            command[cmd]()
+            cmd[command]()
 
         elif command == "exit":
             break
