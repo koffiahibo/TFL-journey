@@ -1,12 +1,18 @@
 import requests
 import json
 
-mode_req = requests.get("https://api.tfl.gov.uk/Line/Meta/Modes")
-modeS = json.loads(mode_req.text)
 #for valid modes
-def valid_modes():
-    list = []
+def valid_Lmodes():
+    list = [] # list of valid Line modes
     mode_req = requests.get("https://api.tfl.gov.uk/Line/Meta/Modes")
+    modeS = json.loads(mode_req.text)
+    for mode in modeS:
+        list.append(mode["modeName"])
+    return list
+
+def valid_Jmodes():
+    list = [] # valide journey planner modes
+    mode_req = requests.get("https://api.tfl.gov.uk/Journey/Meta/Modes")
     modeS = json.loads(mode_req.text)
     for mode in modeS:
         list.append(mode["modeName"])
@@ -17,7 +23,8 @@ def pprint(list) :
         print(item)
 
 
-pprint(valid_modes())
+print(len(valid_Lmodes()))
+print(len(valid_Jmodes()))
 
 
 

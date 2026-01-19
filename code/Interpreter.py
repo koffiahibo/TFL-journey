@@ -1,17 +1,26 @@
 from ValidData import *
 
+cmd =[]
+
+"""
+cmd = {"help": all_commands,
+       "plan-journey", 
+       "check disruptions", 
+       "exit"}
+"""
+
 def loop():
-    cli = input("Journey CLI -> ")
-    value = cli.split(" ")
-    command, arg = value[0], value[1:]
-    while command != "end":
-            if command == "documentation":
-                command2 = input("")
-            loop()
+    while True:
+        command = input("Tfl Journey >>")
+        if command in cmd:
+            command[cmd]()
+
+        elif command == "exit":
+            break
+        else :
+            print("Unknown command")
 
 
-
-
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     loop()
+
