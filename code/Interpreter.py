@@ -1,6 +1,6 @@
 from ValidData import *
-
-cmd = {}
+from commands import *
+cmd = {"plan-journey": plan_journey}
 
 """
 cmd = {"help": all_commands,
