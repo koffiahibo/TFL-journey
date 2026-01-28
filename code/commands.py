@@ -1,5 +1,7 @@
 import requests
 import json
+from functions import *
+from ValidData import *
 
 all_commands = ["help", "plan-journey", "check disruptions", "exit"]
 
@@ -7,31 +9,7 @@ close_ttbec = "51.434168, -0.162293"
 close_alfc = "51.496212, 0.157618"
 mofde = "public-bus"
 
-def req_params():
-    sfrom = "SW177TJ" #input("From: ")
-    to =  "SW81JJ" #input("To: ")
-    via=input("~~Preferences~~\n"
-          "Via: ")
-    date = input("Date (yyyyMMdd format): ")
-    time = input("Time (HHmm format): ")
-    mode = input("Modes of travel (Eg: public-bus,overground,train,tube,coach,dlr,cablecar,tram,river,walking,cycle): ")
-    preferences = input("Preferences(\"leastinterchange\" | \"leasttime\" | \"leastwalking\"): ")
-    parameters0 ={"via":via,
-                "mode":mode,
-                "date":date,
-                "time":time,
-                "timeIs":"departing",
-                 "preferences":preferences,
-                "useRealTimeLiveArrivals" :True
-                }
-    parameters = {}
-    for keys, values in parameters0.items():
-        if isinstance(values, str):
-            values = values.strip()
-        if values != "" and values != None:
-            parameters[keys] = values
 
-    return [sfrom, to, parameters]
 def plan_journey(sfrom, to, params):
     # via = None, mode = None, date = None, time = None, timeAD = None, live_time = None, journey_preferences = None)
     # via = None
@@ -74,14 +52,9 @@ def plan_journey(sfrom, to, params):
     return journeys # list of dictionnaries
 
 
-def display_journeys(journey_data): # journey data is an element of the list returned by plan_journey
-    print("Displaying journey...")
-    print(
-        f"\nDuration : {journey_data["duration"]}min"
-        f"\nTotal cost: £{journey_data["Total Cost"]},"
-        f"\nFrom {journey_data["From"]} to {journey_data["To"]}"
-    )
-    return
-sfrom, to, params = req_params()
-for a in plan_journey(sfrom, to, params):
-    display_journeys(a)
+
+
+def arb():
+    sfrom, to, params = req_params()
+    for a in plan_journey(sfrom, to, params):
+        display_journey(a)
